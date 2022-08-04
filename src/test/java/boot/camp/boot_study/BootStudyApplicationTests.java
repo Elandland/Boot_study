@@ -18,6 +18,9 @@ class BootStudyApplicationTests {
 	@Autowired
 	PostMapper postMapper;
 
+	@Autowired
+	PostService postService;
+
 	@Test
 	void save() {
 		PostRequest params = new PostRequest();
@@ -25,10 +28,7 @@ class BootStudyApplicationTests {
 		params.setContent("1번 게시글 내용");
 		params.setWriter("테스터");
 		params.setNoticeYn(false);
-		postMapper.save(params);
-
-		List<PostResponse> posts = postMapper.findAll();
-		System.out.println("전체 게시글 개수는 : " + posts.size() + "개입니다.");
+		postService.savePost(params);
 	}
 
 

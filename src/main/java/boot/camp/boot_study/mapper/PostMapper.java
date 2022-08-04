@@ -3,11 +3,13 @@ package boot.camp.boot_study.mapper;
 import boot.camp.boot_study.domain.post.PostRequest;
 import boot.camp.boot_study.domain.post.PostResponse;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface PostMapper {
 
         /**

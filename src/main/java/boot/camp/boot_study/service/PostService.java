@@ -23,6 +23,7 @@ public class PostService {
     @Transactional
     public Long savePost(final PostRequest params) {
         postMapper.save(params);
+        System.out.println(params.getId());
         return params.getId();
     }
 

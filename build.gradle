@@ -20,6 +20,7 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java:8.0.29'
 	implementation 'org.projectlombok:lombok'
 	implementation 'net.minidev:json-smart'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect' /* Thymeleaf Layout */
 }
 
 tasks.named('test') {

@@ -18,7 +18,7 @@
 
 
     <!-- 게시글 저장 -->
-    <insert id="save" parameterType="com.study.domain.post.PostRequest" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save" parameterType="boot.camp.boot_study.domain.post.PostRequest" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO tb_post (
         <include refid="postColumns" />
         ) VALUES (
