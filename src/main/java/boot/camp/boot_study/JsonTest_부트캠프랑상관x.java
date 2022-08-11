@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class JsonTest {
+public class JsonTest_부트캠프랑상관x {
 
     public static void main(String[] args) {
 

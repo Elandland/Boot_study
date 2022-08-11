@@ -3,7 +3,7 @@
 <mapper namespace="boot.camp.boot_study.mapper.UserMapper">
 
     <select id="findAll" resultType="HashMap">
-        select * from test_user
+        select * from jobs
     </select>
 
 </mapper>

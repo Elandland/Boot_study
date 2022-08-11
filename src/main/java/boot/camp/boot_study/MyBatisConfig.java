@@ -17,8 +17,7 @@ import javax.sql.DataSource;
 @Configuration
 // 패키지명
 @MapperScan(value = "boot.camp.boot_study", sqlSessionFactoryRef = "SqlSessionFactory")
-public class
-MyBatisConfig {
+public class MyBatisConfig {
 
     @Value("${spring.datasource.mapper-locations}")
     String mPath;
