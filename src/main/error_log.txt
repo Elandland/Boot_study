@@ -1,0 +1,14 @@
+2022_08_11
+어제 작동했었을땐 잘됐는데 아침에 다시 작동시키니
+Could not open JDBC Connection for transaction; nested exception is java.lang.RuntimeException
+java.sql.SQLException: No suitable driver
+오류가 발생함
+
+1. DB서버 생존 확인 (start up)
+2. 리스너 정상 작동 (ready상태)
+3. ip - localhost
+4. sid - xe로 확인
+5. 포트번호 1521 확인
+6. 방화벽 인바운드 확인
+
+해결 - gradle 설정에 이상이 있었음. 코끼리 모양이 안떠서 gradle 반영 된 줄 알았는데 안된거 였음
